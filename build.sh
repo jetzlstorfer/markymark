@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Mac
-env GOOS=darwin GOARCH=amd64 go build -o bin/markymark-osx
+env GOOS=darwin GOARCH=amd64 go build -o bin/markymark-darwin
 
 # Linux 
 env GOOS=linux GOARCH=amd64 go build -o bin/markymark-linux
