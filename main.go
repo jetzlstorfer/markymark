@@ -20,7 +20,7 @@ func main() {
 
 	//fmt.Print(string(data))
 
-	r, _ := regexp.Compile("{{ snippets/([a-zA-Z.]*) }}")
+	r, _ := regexp.Compile("{{ snippets/([_a-zA-Z0-9./-]*) }}")
 
 	placeholders := r.FindAllString(string(data), -1)
 
